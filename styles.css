@@ -1,0 +1,371 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   font-weight: normal;
+   font-family: Gotham Rounded, sans-serif;
+}
+
+body {
+   font-family: 'Space Mono', monospace;
+   background-color: hsla(172, 67%, 45%, 0.301);
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo>img {
+   margin: 5rem 0 3.2rem 0;
+}
+
+.container {
+   width: 1100px;
+   height: 500px;
+   background-color: rgba(255, 255, 255, 0.637);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   position: relative;
+   left: 24%;
+   border-radius: 40px;
+}
+
+.contain {
+   margin-bottom: 20px;
+}
+
+.bill-container {
+   position: relative;
+   right: -50px;
+   margin-bottom: 2%;
+   margin-top: 2%;
+}
+
+.bill {
+   position: relative;
+   left: 117px;
+   color: rgba(0, 0, 0, 0.473);
+}
+
+.labels {
+   position: relative;
+   font-size: 1.1rem;
+   right: 169px;
+}
+
+.cost-wrapper {
+   position: relative;
+}
+
+.cost-wrapper>img {
+   position: absolute;
+}
+
+.cost-wrapper>input {
+   margin-top: 10px;
+   width: 95%;
+   font-size: 1.5rem;
+}
+
+.texts {
+   position: relative;
+   right: 54px;
+   background-color: hsl(180, 33%, 97%);
+   width: 100%;
+   border-radius: 0.5rem;
+   color: hsla(186, 14%, 43%, 0.753);
+   font-family: 'Space Mono', monospace;
+   font-size: 2.4rem;
+   font-weight: 700;
+   text-align: right;
+   padding: 0.5rem 2.4rem;
+   border: none;
+}
+
+#wrapper:focus {
+   outline: none;
+   border: 2px solid hsl(172, 67%, 45%);
+}
+
+#hang:focus {
+   outline: none;
+   border: 2px solid hsl(0, 0%, 100%);
+}
+
+.cost-wrapper>img {
+   position: absolute;
+   left: -40px;
+   top: 1.5rem;
+}
+
+.tip-container {
+   margin-top: 40px;
+   position: relative;
+   left: -7px;
+}
+
+.btn-wrapper {
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 0.0rem;
+   /*border: 1px solid black;*/
+   padding-top: 1.2rem;
+   gap: 9px;
+}
+
+.btn {
+   width: 75%;
+   text-align: center;
+   background-color: hsla(183, 100%, 15%, 0.932);
+   color: hsl(0, 0%, 100%);
+   font-size: 1.4rem;
+   font-weight: 700;
+   border-radius: 0.3rem;
+   padding: 0.6rem 0;
+   transition: all 0.5s ease;
+}
+
+.btn-active {
+   background-color: hsl(172, 67%, 45%);
+   color: hsl(183, 100%, 15%);
+}
+
+.btn:hover {
+   background-color: rgb(159, 232, 224);
+}
+
+.wrap {
+   width: 75%;
+   border-radius: 0.3rem;
+   border: none;
+   padding: 0.6rem 0;
+   text-align: center;
+   font-weight: 700;
+}
+
+.label-wrapper {
+   position: relative;
+   font-size: 1.1rem;
+}
+
+.label-wrapper>label {
+   color: rgba(0, 0, 0, 0.459);
+}
+
+.people-container {
+   position: relative;
+   right: -9%;
+   margin-top: 5%;
+}
+
+.label>label {
+   position: relative;
+   top: 18px;
+   left: -3.3rem;
+   color: rgba(0, 0, 0, 0.459);
+}
+
+.error-msg {
+   position: relative;
+   left: -89px;
+   text-align: right;
+   color: indianred;
+   font-weight: 700;
+   font-size: 1.1rem;
+   opacity: 0;
+}
+
+.show-error-msg {
+   transition: opacity 0.2s ease-in-out;
+   opacity: 1;
+}
+
+.output {
+   margin-top: 40px;
+   background-color: hsl(183, 100%, 15%);
+   width: 39%;
+   border-radius: 1.5rem;
+   padding: 2.2rem;
+   position: relative;
+   left: 25px;
+   bottom: 15px;
+}
+
+.line-output {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 1.4rem 0 2.4rem 0;
+}
+
+.title {
+   position: relative;
+   left: -75%;
+   color: hsl(0, 0%, 100%);
+   font-weight: 700;
+   font-size: 1.3rem;
+}
+
+
+.titles {
+   position: relative;
+   left: -178%;
+   color: hsl(0, 0%, 100%);
+   font-weight: 700;
+   font-size: 1.3rem;
+}
+
+.para {
+   position: relative;
+   left: -75%;
+   color: hsl(184, 14%, 56%);
+   font-weight: 700;
+   font-size: 1.0rem;
+}
+
+.paras {
+   position: relative;
+   left: -178%;
+   color: hsl(184, 14%, 56%);
+   font-weight: 700;
+   font-size: 1.0rem;
+}
+
+
+.values {
+   color: hsl(172, 67%, 45%);
+   font-weight: 700;
+   font-size: 2.5rem;
+}
+
+.value {
+   position: relative;
+   left: 70px;
+}
+
+.shift {
+   position: relative;
+   left: 96px;
+}
+
+.btns {
+   width: 98%;
+   background-color: hsl(172, 67%, 45%);
+   text-transform: uppercase;
+   text-align: center;
+   color: hsl(183, 100%, 15%);
+   font-size: 1.5rem;
+   font-weight: 700;
+   border-radius: 0.5rem;
+   padding: 0.5rem 0;
+   margin-top: 7.5rem;
+   transition: all 0.5s ease;
+}
+
+.btns:hover {
+   background-color: rgb(159, 232, 223);
+}
+
+.btns-actives {
+   background-color: hsl(172, 67%, 45%);
+   color: hsla(183, 100%, 15%, 0.767);
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 380px) {
+   
+   .logo>img {
+      margin: 5rem -32rem 3.1rem 0;
+      width: 50%;
+   }
+
+   .labels {
+      position: relative;
+      font-size: 1.5rem;
+      bottom: 40px;
+   }
+
+   .cost-wrapper>input {
+      padding: 1.2rem;
+      font-size: 1.4rem;
+      position: relative;
+      bottom: 10px;
+      width: 100%;
+   }
+
+   .cost-wrapper>img {
+      position: absolute;
+      width: 4%;
+   }
+
+   .label-wrapper>label {
+      font-size: 1.5rem;
+   }
+
+   .btn {
+      width: 90%;
+      font-size: 2.5rem;
+   }
+
+   .btn:hover {
+      background-color: rgb(159, 232, 224);
+   }
+   
+   .btn-wrapper {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-column-gap: 0.5rem;
+   }
+
+   .wrap {
+      width: 90%;
+   }
+
+   .people-container {
+      position: relative;
+      left: 43px;
+   }
+
+   .label>label {
+      font-size: 1.2rem;
+      bottom: 0;
+   }
+
+   .texts {
+      position: relative;
+   }
+
+   .container {
+      background-color: rgba(255, 255, 255, 0.637);
+      border-radius: 200px;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      width: 198%;
+      padding: 2.5rem;
+      height: 1500px;
+      overflow: hidden;
+   }
+
+   .btns {
+      width: 46%;
+      font-size: 2.4rem;
+      font-weight: 700;
+      padding: 0.6rem 0;
+   }
+
+   .output {
+      width: 100%;
+      background-color: hsl(183, 100%, 15%);
+   }
+
+}
